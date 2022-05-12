@@ -1,0 +1,52 @@
+.work {
+    display: flex;
+}
+
+.work-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.work-item {
+    position: relative;
+}
+
+.work-item::before {
+    content: "";
+    width: 100%;
+    min-height: 70px;
+
+    position: absolute;
+    bottom: 0;
+
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.work-text {
+    position: absolute;
+
+    bottom: 0px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    width: 100%;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $secondary-text-color;
+}
+
+.work-top-title,
+.team-top-title,
+.customers-title {
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}
