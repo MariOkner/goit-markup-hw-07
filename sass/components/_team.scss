@@ -1,12 +1,8 @@
-.team-fon {
-    background: $secondary-bg-color;
-}
-
 .team-list {
     display: flex;
 }
 
-.team-item {
+.team-list__item {
     width: 270px;
     background-color: $secondary-text-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -15,16 +11,16 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-item:not(:last-child) {
+.team-list__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.team-name-card {
+.name-card {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.team-bottom-title {
+.name-card__title {
     color: $title-text-color;
     font-weight: 500;
     font-size: 16px;
@@ -33,23 +29,23 @@
     margin-bottom: 10px;
 }
 
-.team-text {
+.name-card__text {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     margin-bottom: 16px;
 }
 
-.team-soc-list {
+.soc-list {
     display: flex;
     justify-content: center;
 }
 
-.team-soc-item:not(:first-child) {
+.soc-list__item:not(:first-child) {
     margin-left: 10px;
 }
 
-.team-soc-link {
+.soc-list__link {
     width: 44px;
     height: 44px;
     background-color: transparent;
@@ -64,16 +60,15 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0;
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $secondary-text-color;
+    }
 }
 
-.team-soc-icon {
+.soc-list__icon {
     fill: currentColor;
-}
-
-.team-soc-link:hover,
-.team-soc-link:focus {
-    background-color: $accent-color;
-    color: $secondary-text-color;
 }
 
 /* _________________варіант2_______________

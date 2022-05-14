@@ -3,6 +3,10 @@
     padding-bottom: 94px;
 }
 
-.section.no-padding {
+.section.section--nopadding {
     padding-top: 0px;
+}
+
+.section--fon {
+    background: $secondary-bg-color;
 }
